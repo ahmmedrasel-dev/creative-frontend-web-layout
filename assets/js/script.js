@@ -25,4 +25,19 @@ $(function () {
     duplicated: true,
     pauseOnHover: true,
   });
+
+  //*=====venobox js=====
+  $(".venobox").venobox({});
+
+  const $experience = $(".experience");
+  $experience.html(
+    $experience
+      .text()
+      .split("")
+      .map(
+        (char, i) =>
+          `<span style="transform:rotate(${i * 14}deg)">${char}</span>`
+      )
+      .join("")
+  );
 });
