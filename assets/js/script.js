@@ -40,4 +40,7 @@ $(function () {
       )
       .join("")
   );
+
+  // COUNTER JS
+  $(".count").countUp();
 });

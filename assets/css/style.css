@@ -156,12 +156,16 @@ button {
   -o-transition: all linear 0.3s;
 }
 
+.secondary_button img {
+  width: 13px !important;
+  margin-right: 6px;
+}
+
 .common_btn i {
   margin-right: 5px;
 }
 
-.common_btn:hover,
-.secondary_button:hover {
+.common_btn:hover {
   background: var(--colorWhite);
   color: var(--colorPrimary);
 }
@@ -570,8 +574,8 @@ input:focus {
   height: 120px;
   left: 500px;
   bottom: -40px;
-  animation: generateAnimi2 linear 2s infinite alternate;
-  -webkit-animation: generateAnimi2 linear 2s infinite alternate;
+  animation: smooth linear 2s infinite alternate;
+  -webkit-animation: smooth linear 2s infinite alternate;
 }
 .hero_title::before {
   position: absolute;
@@ -596,13 +600,22 @@ input:focus {
     right: 420px;
   }
 }
-@keyframes generateAnimi2 {
+
+@keyframes smooth {
   from {
-    bottom: -40px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
 
   to {
-    bottom: 0px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
   }
 }
 
@@ -806,10 +819,287 @@ input:focus {
   transform-origin: 0px 70px;
 }
 
+#about .about_heading {
+  color: var(--colorHeading);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  margin-top: 25px;
+}
+
+#about .about_shor_desc {
+  color: var(--colorText);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 10px 0 20px;
+}
+
+.about_list_item {
+  margin-bottom: 30px;
+}
+
+#about .about_list_item li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+#about .about_list_icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--colorWhite);
+  box-shadow: 0px 8px 15.7px 0px rgba(12, 4, 66, 0.07);
+  margin-right: 15px;
+}
+
+.about_list_icon i {
+  background: radial-gradient(
+      107.08% 85.59% at 86.3% 87.5%,
+      rgba(0, 0, 0, 0.23) 0%,
+      rgba(0, 0, 0, 0) 86.18%
+    ),
+    radial-gradient(
+      83.94% 83.94% at 26.39% 20.83%,
+      rgba(255, 255, 255, 0.41) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #2f6eff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ceo_photo {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(to bottom, #0f36f878 0%, #3a4fd504 100%);
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.ceo_about {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.ceo_photo img {
+  border-radius: 50%;
+}
+
+.ceo_sign {
+  width: 123px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.ceo_name_sign p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.ceo_sign::after {
+  position: absolute;
+  content: "";
+  background-color: var(--colorText);
+  width: 100%;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+}
+
+/* COUNTER START */
+.counter ul {
+  padding: 40px 0px 0px;
+  background: var(--gradiantColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter ul li {
+  position: relative;
+}
+
+.counter ul li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--colorText);
+}
+
+.counter ul li h3 {
+  margin-top: 3px;
+  font-size: 30px;
+  color: var(--colorHeading);
+}
+
+.counter ul li h3 span {
+  color: var(--colorHeading);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -2px;
+}
+
+.counter ul li p {
+  text-align: center;
+  color: var(--colorText);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* COUNTER END */
+
 /* About Section Style End */
 
-/* Header Section Style Start */
-/* Header Section Style End */
+/* Service Section Style Start */
+
+#services {
+  padding: 100px 0;
+  background-image: url("../images/service_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service_title h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-top: 10px;
+}
+
+.service_card_stack {
+  position: relative;
+}
+
+/* .service_card {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  opacity: 1;
+} */
+
+.service_card {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+  background: var(--colorWhite, #fff);
+  box-shadow: 0px -23px 25.3px 0px #f6f7ff inset,
+    0px 33px 101.1px 0px #eeefff inset;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.service_card:nth-child(1) {
+  transform: translateY(180px) scale(1.02);
+  opacity: 1;
+  z-index: 4;
+}
+
+.service_card:nth-child(2) {
+  transform: translateY(113px) scale(0.94);
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.service_card:nth-child(3) {
+  transform: translateY(52px) scale(0.86);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.service_card:nth-child(4) {
+  transform: translateY(0px) scale(0.8);
+  opacity: 0.8;
+  z-index: 1;
+}
+.service_img {
+  width: 414px;
+  flex-shrink: 0;
+  height: 345px;
+  border-radius: 10px;
+  background: #dbebfd;
+}
+
+.service_img img {
+  border-radius: 10px;
+}
+
+.service_content {
+  margin-left: 60px;
+  width: 540px;
+}
+
+.service_btn {
+  display: inline-flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--Secondary-Shade, #eeefff);
+}
+
+.service_btn span {
+  background: var(
+    --Liniear-For-Badge,
+    linear-gradient(102deg, #5163ff -0.32%, #fe71b9 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service_content h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  color: var(--colorHeading);
+}
+
+.service_content p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--colorText);
+  padding: 10px 0 15px;
+}
+
+.service_card .read_more_btn {
+  display: inline-flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--colorText);
+  border: 1.5px solid var(--colorText, #fff);
+}
+/* Service Section Style End */
 
 /* Header Section Style Start */
 /* Header Section Style End */
