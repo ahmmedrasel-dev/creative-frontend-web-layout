@@ -1304,6 +1304,61 @@ input:focus {
   transform: scale(1);
   opacity: 1;
 }
+/* Header Section Style End */
+
+/* Header Section Style Start */
+#testimonial {
+  background-image: url("../images/testimonial_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.testimonial_img_item {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.testimonial_img_item:hover {
+  transform: scale(1.1);
+}
+
+.slider-nav {
+  height: 200px;
+}
+
+.slider-nav .slick-current .testimonial_img_item {
+  width: 100px;
+  height: 100px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.testimonial_content_wraper .nextArrow {
+  right: -50px;
+}
+.testimonial_content_wraper .prevArrow {
+  left: -50px;
+}
+
+/* .slider-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+} */
+
+.testimonial_description_2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 /* Header Section Style End */
 

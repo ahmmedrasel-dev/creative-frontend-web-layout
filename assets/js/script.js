@@ -96,4 +96,56 @@ $(function () {
       },
     ],
   });
+
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    nextArrow: '<i class="far fa-chevron-right nextArrow"></i>',
+    prevArrow: '<i class="far fa-chevron-left prevArrow"></i>',
+    dots: false,
+    asNavFor: ".slider-nav",
+  });
+
+  $(".slider-nav").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    autoplay: false,
+    autoplaySpeed: 3000,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    centerPadding: "0px",
+    focusOnSelect: true,
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });
