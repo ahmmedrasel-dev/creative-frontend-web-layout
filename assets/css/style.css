@@ -82,6 +82,11 @@ img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
 }
 
 input,
@@ -284,6 +289,36 @@ input:focus {
     -o-transform: scale(2);
   }
 }
+
+/* SLIDER ARROW START */
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px !important;
+  text-align: center;
+  border: 1px solid var(--colorText);
+  border-radius: 50%;
+  color: var(--colorBlack);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  z-index: 1;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+  background: var(--redGradient2);
+  border-color: var(--colorText);
+  color: var(--colorWhite);
+}
+
+/* SLIDER ARROW END */
 
 .form-check-input:focus {
   border-color: var(--colorPrimary);
@@ -539,6 +574,7 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 85px 0;
 }
 .icon {
   width: 50px;
@@ -620,7 +656,7 @@ input:focus {
 }
 
 #hero .content_wraper {
-  margin: 100px 0 140px;
+  height: 550px;
 }
 
 #hero .content_wraper > p {
@@ -640,7 +676,7 @@ input:focus {
 }
 #hero .hero_banner {
   position: absolute;
-  bottom: -170px;
+  bottom: -50px;
   right: 0;
   width: 915px !important;
 }
@@ -672,8 +708,8 @@ input:focus {
 
 .circle {
   position: absolute;
-  right: 300px;
-  top: 100px;
+  right: 335px;
+  top: 190px;
   background-color: var(--colorWhite);
 }
 
@@ -981,27 +1017,13 @@ input:focus {
 
 .service_card_stack {
   position: relative;
+  height: 700px;
 }
-
-/* .service_card {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  opacity: 1;
-} */
 
 .service_card {
   position: absolute;
-  top: 80px;
-  left: 100px;
+  top: 20px;
+  left: 10%;
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -1102,6 +1124,187 @@ input:focus {
 /* Service Section Style End */
 
 /* Header Section Style Start */
+
+.portfolio_slider {
+  position: relative;
+  padding: 150px 25px;
+}
+
+.portfolio_heading {
+  position: relative;
+  padding: 50px;
+}
+
+.portfolio_heading h2,
+.portfolio_heading h2 span {
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+  background: linear-gradient(
+    131deg,
+    rgba(81, 99, 255, 0.08) 27.01%,
+    rgba(254, 113, 185, 0.02) 113.08%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 48%;
+}
+
+.portfolio_heading h2 span {
+  top: 150px;
+  left: 30%;
+}
+.heading_icon {
+  width: 20px;
+  left: 25% !important;
+}
+
+.work_showcase_waraper {
+  position: relative;
+}
+.work_showcase_waraper p,
+.heading_icon {
+  position: absolute;
+  top: 20px;
+  left: 29%;
+}
+
+.work_showcase {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  background: var(
+    --Liniear-For-Badge,
+    linear-gradient(102deg, #5163ff -0.32%, #fe71b9 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.single_portfolio {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  overflow: hidden;
+}
+
+.single_portfolio .slider_action {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  opacity: 0;
+}
+
+.single_portfolio .slider_action_bg {
+  background: var(--colorWhite);
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0px 10px 70px 0px rgba(17, 17, 17, 0.1);
+  border-radius: 8px;
+}
+
+.single_portfolio .slider_action_bg h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+.single_portfolio .slider_action p {
+  color: var(--colorWhite);
+  display: inline-flex;
+  padding: 5px 14px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(
+    --Liniear-For-Badge,
+    linear-gradient(102deg, #5163ff -0.32%, #fe71b9 100%)
+  );
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.single_portfolio .slider_action span {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--colorText);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.single_portfolio .slider_action:hover span {
+  background: var(--redGradient);
+  border-color: var(--colorHeading);
+}
+
+.single_portfolio:hover .slider_action {
+  opacity: 1;
+  bottom: 0;
+}
+
+.portfolio_slider .nextArrow {
+  bottom: 80px;
+  right: 44%;
+}
+
+.portfolio_slider .prevArrow {
+  left: 49%;
+}
+
+.portfolio_slider .icon {
+  width: 40px;
+}
+
+.single_portfolio:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.portfolio_slider .slick-slide {
+  transform: scale(0.6);
+  transition: transform 0.3s ease;
+  opacity: 0.5;
+}
+
+.portfolio_slider .slick-current {
+  transform: scale(1);
+  opacity: 1;
+}
+
 /* Header Section Style End */
 
 /* Header Section Style Start */
