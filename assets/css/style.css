@@ -456,6 +456,11 @@ input:focus {
     2.25px -7px 44px 0px #f1f3ff inset;
 }
 
+.top_contact {
+  display: flex;
+  align-items: center;
+}
+
 .top_bar .language:hover .droap_menu {
   opacity: 1;
   visibility: visible;
@@ -528,6 +533,20 @@ input:focus {
   background-size: cover;
 }
 
+.brand_logo_container {
+  text-align: center;
+}
+
+.brand_logo {
+  width: 200px;
+}
+
+.socailNlang_wraper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .language {
   position: relative;
 }
@@ -574,6 +593,9 @@ input:focus {
   border-right: 3px solid #7d7c87;
   margin-top: -5px;
   right: 15px;
+}
+.main_menu .navbar-brand {
+  display: none;
 }
 
 .navbar_left li {
