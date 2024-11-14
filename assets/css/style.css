@@ -681,9 +681,9 @@ input:focus {
   width: 915px !important;
 }
 
-.video_btn {
-  width: 60px;
-  height: 60px;
+.play_btn {
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -694,6 +694,10 @@ input:focus {
   z-index: 999;
 }
 
+.play_btn i {
+  font-size: 24px;
+}
+
 .circle,
 .circle2 {
   width: 140px;
@@ -702,7 +706,6 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-
   z-index: 99;
 }
 
@@ -724,7 +727,7 @@ input:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 14px;
+  font-size: 16px;
   animation: textRotation 13s linear infinite;
 }
 
@@ -737,7 +740,7 @@ input:focus {
 .watch_video span {
   position: absolute;
   left: 50%;
-  font-size: 14px;
+  font-size: 16px;
   transform-origin: 0 70px;
 }
 
@@ -1418,8 +1421,84 @@ input:focus {
 
 /* Header Section Style End */
 
-/* Header Section Style Start */
-/* Header Section Style End */
+/* Footer Section Style Start */
+.footer {
+  padding: 100px 0;
+  background-image: url("../images/footer_section_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.news_latter {
+  padding: 50px 60px;
+  background-image: url("../images/news_latter_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.news_latter .bell_icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--colorWhite);
+}
+
+.news_latter .bell_icon::after {
+  position: absolute;
+  content: "";
+  height: 70px;
+  width: 70px;
+  border: 1px solid var(--colorText);
+  border-radius: 50%;
+  left: -10px;
+  top: -10px;
+}
+
+.shot_text {
+  color: var(--colorWhite);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.32px;
+  margin-left: 20px;
+}
+
+.news_latter_input {
+  position: relative;
+}
+
+.news_latter_input input {
+  border-radius: 10px;
+  color: var(--colorWhite);
+  font-size: 18px;
+  line-height: 32px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(
+    153deg,
+    rgba(255, 255, 255, 0.45) -3.36%,
+    rgba(254, 113, 185, 0) 149.26%
+  );
+  box-shadow: 0px 20px 122px 0px rgba(13, 7, 75, 0.08) inset,
+    -2px -1px 7.8px 0px rgba(255, 255, 255, 0.15) inset;
+}
+
+.news_latter_input input::placeholder {
+  color: var(--colorWhite) !important;
+}
+
+.news_latter_input button {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+/* Footer Section Style End */
 
 /* Header Section Style Start */
 /* Header Section Style End */

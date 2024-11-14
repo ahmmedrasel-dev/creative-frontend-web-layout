@@ -26,9 +26,6 @@ $(function () {
     pauseOnHover: true,
   });
 
-  //*=====venobox js=====
-  $(".venobox").venobox({});
-
   const $experience = $(".experience");
   $experience.html(
     $experience
@@ -148,4 +145,7 @@ $(function () {
       },
     ],
   });
+
+  //*=====venobox js=====
+  $(".venobox").venobox();
 });

@@ -118,6 +118,7 @@
 
 .vbox-next span,
 .vbox-prev span {
+    position: relative;
     width: 20px;
     height: 20px;
     border: 2px solid transparent;
@@ -153,6 +154,7 @@
 
 .vbox-inline {
     width: 420px;
+    height: 315px;
     height: 70vh;
     padding: 10px;
     background: #fff;
@@ -163,8 +165,10 @@
 
 .venoframe {
     max-width: 100%;
+    width: 100%;
     border: none;
     width: 100%;
+    height: 260px;
     height: 70vh
 }
 
@@ -172,11 +176,12 @@
     height: 260px
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
 
     .vbox-inline,
     .venoframe {
         width: 90%;
+        height: 360px;
         height: 70vh
     }
 
@@ -186,12 +191,13 @@
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
 
     .vbox-inline,
     .venoframe {
         max-width: 1200px;
         width: 80%;
+        height: 540px;
         height: 70vh
     }
 
@@ -222,10 +228,13 @@
 .vbox-content {
     text-align: center;
     float: left;
-    width: 100%;
+    width: auto;
     position: relative;
     overflow: hidden;
-    padding: 20px 4%
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
 }
 
 .vbox-container img {
