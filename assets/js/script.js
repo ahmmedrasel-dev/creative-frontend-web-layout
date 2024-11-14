@@ -1,6 +1,14 @@
 $(function () {
   "use strict";
 
+  $(".search_icon").on("click", function () {
+    $(".search").addClass("show_search");
+  });
+
+  $(".close_search").on("click", function () {
+    $(".search").removeClass("show_search");
+  });
+
   // Sticky Menu JS
   if ($(window).scrollTop() > 1) {
     if ($(".main_menu").offset() != undefined) {
