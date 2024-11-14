@@ -261,10 +261,6 @@
     padding: 50px 0;
   }
 
-  .service_wraper {
-    height: 850px;
-  }
-
   .service_title h2 {
     font-size: 28px;
     line-height: 36px;
@@ -320,5 +316,26 @@
   .common_btn {
     font-size: 14px;
     padding: 10px 20px;
+  }
+
+  .portfolio_heading h2 span {
+    top: 85px;
+    left: 30%;
+  }
+  .portfolio_heading h2,
+  .portfolio_heading h2 span {
+    font-size: 98px;
+    line-height: 90%;
+    left: 8%;
+  }
+
+  .portfolio_slider {
+    position: relative;
+    padding: 50px 5px;
+  }
+
+  .single_portfolio {
+    overflow: hidden;
+    width: 221px;
   }
 }

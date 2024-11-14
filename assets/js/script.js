@@ -75,7 +75,7 @@ $(function () {
   $(".count").countUp();
 
   $(".portfolio_slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
     infinite: true,
@@ -119,6 +119,13 @@ $(function () {
       },
       {
         breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           arrows: false,

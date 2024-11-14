@@ -1324,7 +1324,7 @@ input:focus {
 .single_portfolio {
   position: relative;
   overflow: hidden;
-  width: 400px;
+  width: 340px;
   border: 3px solid var(--colorBlack);
 }
 
