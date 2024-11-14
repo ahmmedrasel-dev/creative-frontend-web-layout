@@ -53,8 +53,8 @@ $(function () {
     speed: 300,
     dots: false,
     arrows: true,
-    nextArrow: '<i class="far fa-chevron-right nextArrow"></i>',
-    prevArrow: '<i class="far fa-chevron-left prevArrow"></i>',
+    nextArrow: '<i class="fas fa-arrow-right nextArrow"></i>',
+    prevArrow: '<i class="fas fa-arrow-left prevArrow"></i>',
 
     responsive: [
       {
@@ -100,17 +100,17 @@ $(function () {
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: true,
-    nextArrow: '<i class="far fa-chevron-right nextArrow"></i>',
-    prevArrow: '<i class="far fa-chevron-left prevArrow"></i>',
+    nextArrow: '<i class="fas fa-arrow-right nextArrow"></i>',
+    prevArrow: '<i class="fas fa-arrow-left prevArrow"></i>',
     dots: false,
     asNavFor: ".slider-nav",
   });
 
   $(".slider-nav").slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     autoplay: false,
