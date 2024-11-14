@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creative Front-End Developer Skill Test</title>
-    <!-- <link rel="icon" type="image/png" href="assets/images/favicon.png" /> -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.svg" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/nice-select.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
     <link rel="stylesheet" href="assets/css/venobox.min.css" />
     <link rel="stylesheet" href="assets/css/scroll_button.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/animated_barfiller.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
@@ -289,7 +291,11 @@
                 </div>
               </div>
               <!-- Hero Banner -->
-              <div class="hero_banner">
+              <div
+                class="hero_banner wow slideInLeft"
+                data-wow-duration="2s"
+                data-wow-delay="3s"
+              >
                 <img
                   src="assets/images/hero_main.png"
                   class="img-fluid"
@@ -1078,6 +1084,8 @@
     <script src="assets/js/slick.min.js"></script>
     <!--Waypoint js-->
     <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!--WOW js-->
+    <script src="assets/js/wow.min.js"></script>
     <!--Scroll Btn js-->
     <script src="assets/js/scroll_button.js"></script>
     <!--countup js-->

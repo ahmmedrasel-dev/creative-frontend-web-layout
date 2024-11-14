@@ -181,4 +181,7 @@ $(function () {
 
   //*=====venobox js=====
   $(".venobox").venobox();
+
+  // WOW JS
+  new WOW().init();
 });
