@@ -700,7 +700,7 @@ input:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 85px 0;
+  padding: 110px 0;
 }
 .icon {
   width: 50px;
@@ -837,8 +837,8 @@ input:focus {
 
 .circle {
   position: absolute;
-  right: 335px;
-  top: 190px;
+  right: 285px;
+  top: 245px;
   background-color: var(--colorWhite);
 }
 
@@ -904,7 +904,7 @@ input:focus {
   text-transform: uppercase;
   position: relative;
   color: transparent;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: var(--colorWhite);
 }
 
@@ -1719,6 +1719,11 @@ input:focus {
 
 .news_latter_input {
   position: relative;
+}
+
+.news_latter_right {
+  display: flex;
+  align-items: center;
 }
 
 .news_latter_input input {

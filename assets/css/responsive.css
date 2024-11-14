@@ -361,4 +361,43 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  .news_latter {
+    padding: 50px 10px;
+  }
+
+  .news_latter_right {
+    margin-bottom: 30px;
+  }
+
+  .footer_left {
+    margin-bottom: 30px;
+  }
+
+  .footer_right {
+    margin: 0px;
+    padding: 40px 20px;
+  }
+
+  .quick_link_container {
+    margin-bottom: 40px;
+  }
+
+  .service_container {
+    margin-bottom: 40px;
+  }
+
+  .news_latter .bell_icon::after {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left: -6px;
+    top: -5px;
+  }
+
+  .news_latter .bell_icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
 }
