@@ -334,8 +334,31 @@
     padding: 50px 5px;
   }
 
+  .work_showcase_waraper p,
+  .heading_icon {
+    position: absolute;
+    top: -4px;
+    left: 31%;
+  }
+
   .single_portfolio {
     overflow: hidden;
-    width: 221px;
+    width: 306px;
+  }
+
+  .testimonial_content_wraper .nextArrow {
+    right: 10px;
+    bottom: 280px;
+  }
+
+  .testimonial_content_wraper .prevArrow {
+    left: 10px;
+    bottom: 280px;
+  }
+
+  .testimonial_description_2 > p {
+    padding: 40px 20px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
