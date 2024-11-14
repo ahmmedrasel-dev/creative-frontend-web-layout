@@ -153,10 +153,7 @@
   }
 
   .hero_title::before {
-    width: 80px;
-    height: 107px;
-    left: 250px;
-    top: -50px;
+    content: none;
   }
 
   #hero .content_wraper {
@@ -204,5 +201,124 @@
     top: 10px;
     left: -65px;
     z-index: 1;
+  }
+
+  /* About Section */
+
+  #about .about_heading {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 30px;
+  }
+
+  .about_image .img_1 {
+    width: 250px;
+    height: 450px;
+  }
+
+  .about_image .img_2 {
+    width: 250px;
+    height: 320px;
+    right: 10px;
+  }
+
+  .circle2 {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    border: 2px dashed var(--colorText);
+  }
+  .about_contetn_wraper {
+    margin-top: 80px;
+  }
+
+  .ceo_about_wraper {
+    flex-direction: column;
+  }
+
+  .ceo_about {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .counter ul {
+    padding: 40px 0px 0px;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .counter ul li::before {
+    content: none;
+  }
+
+  .counter ul li {
+    text-align: center;
+  }
+
+  /* Service Section */
+
+  #services {
+    padding: 50px 0;
+  }
+
+  .service_wraper {
+    height: 850px;
+  }
+
+  .service_title h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .service_card_stack {
+    height: 850px;
+    left: -15px;
+  }
+
+  .service_card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .service_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .service_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service_content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .service_content h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .service_content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .service_btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .read_more_btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .common_btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }

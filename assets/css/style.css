@@ -1048,6 +1048,11 @@ input:focus {
   margin-right: 10px;
 }
 
+.ceo_about_wraper {
+  display: flex;
+  align-items: center;
+}
+
 .ceo_about {
   display: flex;
   align-items: center;
