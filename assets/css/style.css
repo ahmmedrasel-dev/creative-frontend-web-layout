@@ -1430,6 +1430,123 @@ input:focus {
   background-repeat: no-repeat;
 }
 
+.footer_logo {
+  width: 218px;
+  margin-bottom: 25px;
+}
+
+.footer_left {
+  padding: 40px;
+  border-radius: 10px;
+  background: linear-gradient(
+    145deg,
+    rgba(254, 113, 185, 0.04) -2.12%,
+    rgba(20, 2, 73, 0.01) 121.13%
+  );
+  box-shadow: 0px 20px 122px 0px rgba(19, 7, 150, 0.08) inset,
+    2.25px -7px 43.7px 0px rgba(255, 255, 255, 0.02) inset;
+}
+
+.footer_text p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.footer_text p:nth-child(2) {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.time {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 25px;
+}
+
+.footer_social_icon ul {
+  display: flex;
+}
+.footer_social_icon ul li {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.service_container ul li,
+.quick_link_container ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.quick_link_container ul li a,
+.service_container ul li a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer_right {
+  border-radius: 10px;
+  background: linear-gradient(
+    145deg,
+    rgba(254, 113, 185, 0.04) -2.12%,
+    rgba(20, 2, 73, 0.01) 121.13%
+  );
+  box-shadow: 0px 20px 122px 0px rgba(19, 7, 150, 0.08) inset,
+    2.25px -7px 43.7px 0px rgba(255, 255, 255, 0.02) inset;
+  padding: 40px 50px;
+}
+
+.footer_right h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.24px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 25px;
+}
+
+.event_container li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.event_img {
+  width: 50px;
+  height: 50px;
+}
+
+.event_img img {
+  border-radius: 50%;
+}
+
+.event_details {
+  margin-left: 20px;
+}
+
+.event_details h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+}
+.event_details p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+}
 .news_latter {
   padding: 50px 60px;
   background-image: url("../images/news_latter_bg.png");
