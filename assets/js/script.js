@@ -1,6 +1,31 @@
 $(function () {
   "use strict";
 
+  // Sticky Menu JS
+  if ($(window).scrollTop() > 1) {
+    if ($(".main_menu").offset() != undefined) {
+      $(".main_menu").addClass("sticky_menu");
+    }
+  } else {
+    if ($(".main_menu").offset() != undefined) {
+      $(".main_menu").removeClass("sticky_menu");
+    }
+  }
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1) {
+      if ($(".main_menu").offset() != undefined) {
+        if (!$(".main_menu").hasClass("sticky_menu")) {
+          $(".main_menu").addClass("sticky_menu");
+        }
+      }
+    } else {
+      if ($(".main_menu").offset() != undefined) {
+        $(".main_menu").removeClass("sticky_menu");
+      }
+    }
+  });
+
   //======Nice select js=======
   $(".language_select").niceSelect();
 

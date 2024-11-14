@@ -397,10 +397,15 @@ input:focus {
   position: relative;
   padding-left: 20px;
   margin-right: 30px;
+  color: var(--colorText);
 }
 .top_email {
   position: relative;
   padding-left: 30px;
+}
+
+.top_email a {
+  color: var(--colorText);
 }
 
 .top_address::before {
@@ -517,13 +522,24 @@ input:focus {
 
 .main_menu {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 85px;
+  left: 0;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
   z-index: 999;
+}
+
+.main_menu.sticky_menu {
+  top: 0;
+  z-index: 999;
+  background: var(--colorHeading);
+  border: none;
+  animation: menu_animate 1.5s;
+  -webkit-animation: menu_animate 1.5s;
 }
 
 .main_menu .navbar-nav .nav-item {
@@ -1220,10 +1236,10 @@ input:focus {
 }
 
 .single_portfolio .slider_action_bg h3 {
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 32px;
 }
 .single_portfolio .slider_action p {
   color: var(--colorWhite);
@@ -1432,7 +1448,7 @@ input:focus {
 
 .footer_logo {
   width: 218px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .footer_left {
