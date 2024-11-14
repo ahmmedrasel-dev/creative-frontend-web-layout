@@ -1,6 +1,11 @@
 $(function () {
   "use strict";
 
+  // MOBILE MENU TOGGLER
+  $(".navbar-toggler").on("click", function () {
+    $(".navbar-toggler").toggleClass("show");
+  });
+
   $(".search_icon").on("click", function () {
     $(".search").addClass("show_search");
   });
