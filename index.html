@@ -307,11 +307,21 @@
                 data-wow-duration=".5s"
                 data-wow-delay="1s"
               >
-                <img
-                  src="assets/images/hero_main.png"
-                  class="img-fluid"
-                  alt="Main Hero Image"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 568px)"
+                    srcset="assets/images/hero_main_sm.png"
+                  />
+                  <source
+                    media="(max-width: 778px)"
+                    srcset="assets/images/hero_main_sm.png"
+                  />
+                  <img
+                    src="assets/images/hero_main.png"
+                    class="img-fluid"
+                    alt="Main Hero Image"
+                  />
+                </picture>
               </div>
             </div>
           </div>

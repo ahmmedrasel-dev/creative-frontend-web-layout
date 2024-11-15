@@ -54,6 +54,10 @@
     display: none !important;
   }
 
+  .main_menu .droap_menu {
+    left: 22%;
+  }
+
   #navbarSupportedContent {
     border-top: 1px solid var(--colorPrimary);
     margin-top: 15px;
@@ -497,6 +501,10 @@
     -moz-transition: all linear 0.3s;
     -ms-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
+  }
+
+  .main_menu .droap_menu {
+    left: 22%;
   }
 
   /* Hero Section  */
