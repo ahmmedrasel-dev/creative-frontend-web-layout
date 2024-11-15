@@ -114,10 +114,6 @@ button {
   border: none;
 }
 
-.custom_container {
-  max-width: 1362px;
-}
-
 .common_btn {
   position: relative;
   z-index: 1;
@@ -445,7 +441,6 @@ input:focus {
   height: 140px;
 } */
 .top_bar {
-  width: 1362px;
   height: 70px;
   line-height: 70px;
   padding: 0px 30px;
@@ -646,7 +641,7 @@ input:focus {
 .main_menu.sticky_menu {
   top: 0;
   z-index: 999;
-  background: var(--colorHeading);
+  background: var(--colorWhite);
   border: none;
   animation: menu_animate 1.5s;
   -webkit-animation: menu_animate 1.5s;
