@@ -518,8 +518,8 @@
   .hero_title::after {
     width: 68px;
     height: 109px;
-    left: 260px;
-    bottom: -49px;
+    left: 190px;
+    bottom: 8px;
   }
 
   .hero_title::before {
@@ -542,7 +542,7 @@
     height: 100px;
     position: absolute;
     right: 70px;
-    top: 730px;
+    top: 750px;
   }
   .play_btn {
     width: 40px;
@@ -732,7 +732,7 @@
 
   .testimonial_content_wraper .nextArrow {
     right: 20px;
-    bottom: 280px;
+    bottom: 340px;
   }
 
   .slider-nav .slick-current .testimonial_img {
@@ -741,7 +741,7 @@
 
   .testimonial_content_wraper .prevArrow {
     left: 20px;
-    bottom: 280px;
+    bottom: 340px;
   }
 
   .testimonial_description_2 > p {
