@@ -46,6 +46,8 @@ li {
 a {
   display: inline-block;
   text-decoration: none;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
 }
 
 a:hover {
@@ -645,6 +647,65 @@ input:focus {
   border: none;
   animation: menu_animate 1.5s;
   -webkit-animation: menu_animate 1.5s;
+}
+
+.main_menu .navbar-nav {
+  line-height: 70px;
+}
+
+.main_menu .droap_menu {
+  position: absolute;
+  background: var(--colorWhite);
+  width: 220px;
+  top: 140%;
+  left: 0px;
+  line-height: 40px;
+  padding: 10px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 450px;
+  overflow: hidden auto;
+  z-index: 9;
+  transition: all 0.15s linear 0s;
+  -webkit-transition: all 0.15s linear 0s;
+  -moz-transition: all 0.15s linear 0s;
+  -ms-transition: all 0.15s linear 0s;
+  -o-transition: all 0.15s linear 0s;
+}
+
+.main_menu .droap_menu::-webkit-scrollbar {
+  background: var(--colorText);
+  width: 3px;
+  height: 30px;
+}
+
+.main_menu .droap_menu::-webkit-scrollbar-thumb {
+  background: var(--colorPrimary);
+}
+
+.main_menu .droap_menu li a {
+  display: block;
+  padding: 2px 20px;
+  color: var(--colorBlack);
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.main_menu .droap_menu li a:hover,
+.main_menu .droap_menu li a.active {
+  padding-left: 25px;
+  color: var(--colorPrimary);
+  opacity: 1;
+}
+
+.main_menu .nav-item:hover .droap_menu {
+  opacity: 1;
+  visibility: visible;
+  top: 112%;
 }
 
 .main_menu .navbar-nav .nav-item {

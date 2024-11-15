@@ -696,6 +696,20 @@
     padding: 50px 5px;
   }
 
+  .single_portfolio .slider_action_bg h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .single_portfolio .slider_action span {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    line-height: 30px;
+  }
+
   .work_showcase_waraper p,
   .heading_icon {
     position: absolute;
